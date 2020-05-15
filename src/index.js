@@ -482,7 +482,6 @@ let newUserFromJson = function(data){
  }
 
  let renderAboutPage = function(){
-    console.log(current_user)
     mainContent.innerHTML = '';
     let box = document.createElement('div')
     box.innerHTML = "About";
