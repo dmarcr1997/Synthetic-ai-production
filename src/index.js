@@ -1,4 +1,4 @@
-current_user;
+let current_user;
 
 class User{
     constructor(username, email, id){
