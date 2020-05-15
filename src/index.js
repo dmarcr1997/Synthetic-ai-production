@@ -15,12 +15,17 @@ class User{
     }      
     
     homePage(){
-        mainContent.innerHTML ='';
-        let heading = document.createElement('h1');
-        heading.innerText = this.username;
-        mainContent.appendChild(heading);
-        this.createUserButtons();
-        this.createBrainLinks();
+        try{
+            mainContent.innerHTML ='';
+            let heading = document.createElement('h1');
+            heading.innerText = this.username;
+            mainContent.appendChild(heading);
+            this.createUserButtons();
+            this.createBrainLinks();
+        }
+        catch(err){
+            refreshRender();
+        }
     }
     createUserButtons(){
         let home = document.createElement('button');
@@ -490,9 +495,7 @@ let newUserFromJson = function(data){
     
     let loginPageButton = document.createElement('button');
     loginPageButton.innerText = 'Back to Landing Page'
-    loginPageButton.addEventListener('click', () => {
-        if (!!current_user)current_user.homePage()
-        else refreshRender()}); 
+    loginPageButton.addEventListener('click', () => {current_user.homePage()}; 
     let par = document.createElement('p');
     par.innerText = "Hello Welcome to Synthetic Ai. The purpose of this application is to allow users to create, test, and implement basic Ai's. All of the Ai's used in this application were made using Brain.js.";
     let par2 = document.createElement('p');
