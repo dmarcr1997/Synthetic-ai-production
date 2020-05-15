@@ -490,9 +490,9 @@ let newUserFromJson = function(data){
     
     let loginPageButton = document.createElement('button');
     loginPageButton.innerText = 'Back to Landing Page'
-    loginPageButton.addEventListener('click', () => refreshRender()); 
-
-   
+    loginPageButton.addEventListener('click', () => {
+        if (!!current_user)current_user.homePage()
+        else refreshRender()}); 
     let par = document.createElement('p');
     par.innerText = "Hello Welcome to Synthetic Ai. The purpose of this application is to allow users to create, test, and implement basic Ai's. All of the Ai's used in this application were made using Brain.js.";
     let par2 = document.createElement('p');
