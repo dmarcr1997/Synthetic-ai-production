@@ -275,7 +275,7 @@ class Brain{
             alert(data['message']);
         }).catch(error => console.log(error));
         mainContent.innerHTML = "";
-        refreshRender();
+        current_user.homePage();
     }
 
     static editFields(currentData, data){
