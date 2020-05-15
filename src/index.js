@@ -405,7 +405,7 @@ class SentimentalBrain{
 }
 
 
-const BASE_URL = "https://synthetic-ai-api2.herokuapp.com/"
+const BASE_URL = "https://synthetic-ai-api2.herokuapp.com"
 const mainContent = document.getElementsByClassName('user_location')[0];
 
 let renderHomePage = function(){
@@ -484,6 +484,7 @@ let newUserFromJson = function(data){
  }
 
  let renderAboutPage = function(){
+    console.log(current_user)
     mainContent.innerHTML = '';
     let box = document.createElement('div')
     box.innerHTML = "About";
