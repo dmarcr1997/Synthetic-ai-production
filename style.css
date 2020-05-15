@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #B7FB82;
+  }
+  
+  header {
+    background-color: #655A5A;
+    margin: 0 auto;
+    height: 50px;
+    color: #FFF8F8; 
+  }
+  
+  header h2 {
+    padding: 10px;
+    margin: 0;
+  }
+
+  img.head_img {
+    max-width: 30%;
+    max-height: 20%;  
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: .3fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  
+  div.card {
+    background-color: #eeeeee;
+    width: 300px;
+    box-shadow: 10px 10px grey;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  div.brain {
+    background-color: #655A5A;
+    width: 500px;
+    box-shadow: 10px 10px grey;
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFF8F8; 
+  }
+  div.brain input{
+    width: 100%;
+  }
+  div.brain textarea{
+    width:100%;
+    resize: none;
+    outline: none;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 2%;
+  }
+
+  div.brain p{
+    color: #FFF8F8; 
+  }
+
+  p {
+    font-size: 1.5em;
+    color: black;
+    font-family: Helvetica;
+  }
+  
+  li {
+    font-size: 1.05em;
+    list-style: none;
+    padding-right: 20px;
+  }
+  input {
+    align-content: center;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+  } 
+  textarea{
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    width: 80%;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+  }
+  
+  
+  button {
+    font-size: .65em;
+    color: #fff;
+    background-color: green;
+    border-radius: 12px;
+  }
+  
+  button.release {
+    float: right;
+    background-color: #E1332D;
+  }
+  
+  @media only screen and (min-width: 500px) {
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (min-width: 850px) {
+    main {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
