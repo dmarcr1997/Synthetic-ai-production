@@ -1,4 +1,3 @@
-let current_user = undefined;
 
 class User{
     constructor(username, email, id){
