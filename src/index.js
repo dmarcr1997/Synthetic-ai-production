@@ -1,4 +1,3 @@
-
 class User{
     constructor(username, email, id){
         this.username = username;
@@ -403,7 +402,7 @@ class SentimentalBrain{
     }
 }
 
-
+let current_user;
 const BASE_URL = "https://synthetic-ai-api2.herokuapp.com/"
 const mainContent = document.getElementsByClassName('user_location')[0];
 
